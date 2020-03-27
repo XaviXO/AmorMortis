@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+
+:root {
+  --mainPink: #ef7998;
+  --mainTColor: #990d2b;
+  --mainYellow: rgb(249, 228, 148);
+  --mainShady: #777070;
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --darkMode: #272727;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --newTrans: rgba(175, 45, 145, 0.5);
+  --shadyTrans: rgba(27, 12, 24, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+}
+
+body {
+  font-family: "Kaushan Script", cursive;
+  background: var(--mainBlack);
+  color: var(--mainWhite);
+}
+/* global styles  */
+.btn-pink{
+  color: var(--mainYellow) !important;
+  border-color: var(--mainYellow) !important;
+}
+.btn-pink:hover{
+  color: var(--mainPink) !important;
+  border-color: var(--mainPink) !important;
+}
+.btn-black{
+  color: var(--mainBlack) !important;
+  border-color: var(--mainBlack) !important;
+}
+.btn-white{
+  color: var(--mainWhite) !important;
+  border-color: var(--mainWhite) !important;
+}
+.btn-white:hover{
+  color: var(--mainShady) !important;
+  border-color: var(--mainShady) !important;
+}
+/* nav links */
+.navbar{
+  background: var(--darkMode);
+}
+.navbar-toggler {
+  outline: none !important;
+}
+.toggler-icon {
+  font-size: 2.5rem;
+  color: var(--mainWhite);
+}
+.nav-link{
+  color: var(--mainWhite);
+  transition: all 1s ease-in-out;
+  font-size: 1.5rem;
+}
+/* cart Styles  */
+.nav-link:hover{
+  color: var(--mainShady);
+}
+.cart-info__icon{
+  color: var(--mainWhite);
+  cursor: pointer;
+}
+.cart-info{
+  border: 0.1rem solid var(--mainWhite);
+  color: var(--mainWhite);
+  border-radius: 0.25rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+.cart-info:hover{
+  background-color: var(--mainShady);
+  border-color: var(--mainShady);
+  color: var(--mainWhite);
+}
+.cart-info:hover .cart-info__icon{
+  color: var(--mainWhite);
+}
+.max-height{
+  min-height: calc(100vh - 76px); /* or for full image 100vh */
+  background: linear-gradient(var(--newTrans),var(--shadyTrans)), url('../img/amormortis.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.banner{
+  color: var(--mainWhite);
+  margin-top: -4rem;
+}
+
+.banner-title{
+  color: var(--mainTColor);
+  font-size: 4rem;
+}
+
+.banner-link{
+  font-size: 1.5rem;
+  color: var(--mainWhite);
+  background-origin: padding-box;
+  border: 0.2rem solid var(--mainWhite);
+}
+
+.banner-link:hover{
+  background: var(--mainBlack);
+  border: var(--mainBlack);
+  color: var(--mainTColor);
+  outline: none !important;
+}
+/* about section  */
+.about-img__container{
+  position: relative;
+}
+
+.about-img__container img{
+  height: 100%;
+  width: 100%;
+}
+.about-img__container::before{
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: -1.7rem;
+  width: 100%;
+  height: 100%;
+  outline: 0.5rem solid var(--mainYellow);
+  z-index: -1;
+  transition: all 1s linear;
+}
+
+.about-img__container:hover:before{
+  top: 0;
+  left: 0;
+}
+.about h2{
+  font-size: 2rem;
+  color: var(--mainTColor);
+}
+.about h2 strong{
+  font-size: 1.2rem;
+  color: var(--mainWhite);
+}
+/* store  */
+.store{
+  background: var(--darkMode);
+}
+.search-box{
+  background: var(--mainBlack);
+  color: var(--mainWhite);
+}
+.single-item{
+  background: var(--mainBlack);
+  transition: 0.3s all linear;
+}
+.single-item:hover{
+  box-shadow: 0 10px 15px rgba(175, 45, 145, 0.5);
+}
+.img-container{
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+.store-img{
+  transition: all 1s ease-in-out;
+  height: 25rem;
+}
+.img-container:hover .store-img{
+  transform: scale(1.2);
+}
+.store-item-icon{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: purple;
+  border-top-left-radius: 1rem;
+  transition: all 1s ease-in-out;
+  transform: translate(100%, 100%);
+}
+.img-container:hover .store-item-icon{
+  transform: translate(0, 0);
+}
+.store-item-icon:hover{
+  color: gold;
+}
+/* services */
+.services{
+  color: var(--mainWhite);
+  background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/artsku.jpg')center/cover fixed no-repeat;
+}
+.service-title{
+  letter-spacing: 0.5rem;
+}
+.service-text{
+  word-spacing: 0.5rem;
+}
+/* footer */
+.footer-title{
+  background: var(--darkMode);
+}
+.footer-contact{
+  background: var(--darkMode);
+}
+.footer-icon{
+  font-size: 1.5rem;
+  color: var(--mainWhite);
+  transition: all 0.4s ease-in-out;
+}
+.footer-icon:hover{
+  color: var(--mainShady);
+}
+/* cart  */
+.cart{
+  position: absolute;
+  min-height: 10rem;
+  background: var(--darkMode);
+  top: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  width: 0;
+  overflow: hidden;
+}
+.show-cart{
+  width: 18rem;
+  padding: 2rem 1.5rem;
+  transform: rotateY(-360deg);
+}
+.cart-item{
+  transform: all 1s ease-in-out;
+}
+.cart-item-remove{
+  color: var(--mainWhite);
+  transition: all 0.5s ease-in-out;
+}
+.cart-item-remove:hover{
+  transform: scale(1.1);
+  color: var(--mainPink);
+}
+.cart-item-price{
+  font-size: 0.8rem;
+}

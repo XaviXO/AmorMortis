@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="css/all.css">
+  <title>AmorMortis</title>
+  <style>
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <nav class="navbar navbar-expand-lg px-4">
+      <a href="#" class="navbar-brand">
+        <img src="img/skull1.png" alt="main icon">
+      </a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+        <span class="toggler-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="navbar-nav text-captilize mx-auto">
+          <li class="nav-item active">
+            <a href="#header" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#store" class="nav-link">Store</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#taxidermy" class="nav-link">Taxidermy</a>
+          </li>
+        </ul>
+        <div class="nav-info-items d-none d-lg-flex">
+          <!-- single info -->
+          <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+            <span class="info-icon mx-lg-3">
+              <i class="fas fa-phone"></i>
+            </span>
+            <p class="mb-0"> (123)456-7890 </p>
+          </div>
+          <!-- single info  -->
+          <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+            <span class="cart-info__icon mr-lg-3">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+            <p class="mb-0 text-capitalize">
+              <span id="item-count">2</span>
+              items - $
+              <span class="item-total">
+                10.49
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of Nav -->
+    <!-- banner -->
+    <div class="container-fluid">
+      <div class="row max-height justify-content-center align-items-center">
+        <div class="col-10 mx-auto banner text-center">
+          <h1 class="text-captialize">
+            Welcome to <strong class="banner-title">Amor Mortis Taxidermy</strong>
+          </h1>
+          <a href="#store" class="btn banner-link text-uppercase my-2">Explore</a>
+        </div>
+        <!-- cart  -->
+        <div class="cart" id="cart">
+          <!-- cart item -->
+          <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+            <img src="imgCart/octopus.png" class="img-fluid rounded-circle" id="item-img" alt="">
+            <div class="item-text">
+              <p id="cart-item-title" class="font-weight-bold mb-0">
+                Cart Item
+              </p>
+              <span>$</span>
+              <span id="cart-item-price" class="cart-item-price mb-0">10.99</span>
+            </div>
+            <a href="#" id="cart-item-remove" class="cart-item-remove">
+              <i class="fas fa-trash"></i>
+            </a>
+          </div>
+          <!-- end of cart item  -->
+          <!-- cart item -->
+          <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+            <img src="imgCart/sheep.png" class="img-fluid rounded-circle" id="item-img" alt="">
+            <div class="item-text">
+              <p id="cart-item-title" class="font-weight-bold mb-0">
+                Cart Item
+              </p>
+              <span>$</span>
+              <span id="cart-item-price" class="cart-item-price mb-0">10.99</span>
+            </div>
+            <a href="#" id="cart-item-remove" class="cart-item-remove">
+              <i class="fas fa-trash"></i>
+            </a>
+          </div>
+          <!-- end of cart item  -->
+          <!-- Total -->
+          <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+            <h5>Total</h5>
+            <h5>$ <strong id="cart-total" class="font-weight-bold">10.00</strong></h5>
+          </div>
+          <!-- end of total  -->
+          <!-- cart button  -->
+          <div class="cart-buttons-container mt-3 d-flex jusitfy-content-between">
+            <a href="#" id="clear-cart" class="btn btn-white text-uppercase">clear cart</a>
+            <a href="#" id="clear-cart" class="btn btn-pink text-uppercase">Checkout</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of banner -->
+  </header>
+  <!-- end of Header -->
+  <!-- about  -->
+  <section class="about py-5" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 mx-auto col-md-6 my-5">
+          <h1 class="text-capitalize">About <strong class="banner-title">Us</strong></h1>
+          <h2 class="text-capitalize">Brandi <strong class="banner-title">Rivera</strong></h2>
+          <p class="my-4 text-muted w-75">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, nostrum repellendus! Nobis, totam! Alias, odit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, asperiores.
+          </p>
+          <a href="#" class="btn btn-white text-uppercase">Explore</a>
+        </div>
+        <div class="col-10 mx-auto col-md-6 my-5 align-self-center">
+          <div class="about-img__container">
+            <img src="img/boo2.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end of about  -->
+  <!-- store section  -->
+  <section id="store" class="store py-5">
+    <div class="container">
+      <!-- section title  -->
+      <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <h1 class="text-capitalize">Our <strong class="banner-title">Store</strong></h1>
+        </div>
+      </div>
+      <!-- end section title  -->
+      <!-- filter buttons -->
+      <div class="row">
+        <div class="col-log-8 mx-auto d-flex justify-content-around sortBtn flex-wrap">
+          <a href="#"class="btn btn-white text-uppercase filter-btn m-2" data-filter="all">all</a>
+          <a href="#"class="btn btn-white text-uppercase filter-btn m-2" data-filter="all">art</a>
+          <a href="#"class="btn btn-white text-uppercase filter-btn m-2" data-filter="all">bones</a>
+          <a href="#"class="btn btn-white text-uppercase filter-btn m-2" data-filter="all">globes</a>
+          <a href="#"class="btn btn-white text-uppercase filter-btn m-2" data-filter="all">specimens</a>
+        </div>
+      </div>
+      <!-- end of filter buttons -->
+      <!-- search box -->
+      <div class="row">
+        <div class="col-10 mx-auto col-md-6">
+          <form>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text search-box" id="search-icon">
+                  <i class="fas fa-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="search-item" placeholder="Search...">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- end of search box -->
+      <!-- store items  -->
+      <div class="row store-items" id="store-items">
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item taxi" data-item="taxi">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/dead1.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Cat Skull Lamp</h5>
+                <h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">145</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of single item -->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item taxi" data-item="taxi">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/dead2.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Skull Lamp</h5>
+                <h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">105</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of single item -->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item taxi" data-item="taxi">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/dead3.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Drako Bunny</h5>
+                <h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">235</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of single item -->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item taxi" data-item="taxi">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/dead4.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Bat Cave</h5>
+                <h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">220</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of single item -->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item taxi" data-item="taxi">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/dead5.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Kitty Kitty</h5>
+                <h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">120</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of single item -->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item taxi" data-item="taxi">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/dead6.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Octopus Globe</h5>
+                <h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">100</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of single item -->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item taxi" data-item="taxi">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/dead7.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Bat Frame</h5>
+                <h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">180</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of single item -->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item taxi" data-item="taxi">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/dead8.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Brain Globe</h5>
+                <h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">70</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of single item -->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item taxi" data-item="taxi">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/dead1.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Mega Skull Lamp</h5>
+                <h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">140</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of single item -->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item taxi" data-item="taxi">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/dead6.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Ocotopus Globe</h5>
+                <h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">120</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of single item -->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item taxi" data-item="taxi">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/dead2.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Skull Mast</h5>
+                <h5 class="store-item-value">$<strong id="store-item-price" class="font-weight-bold">150</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of single item -->
+        <!-- single item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item taxi" data-item="taxi">
+          <div class="card single-item">
+            <div class="img-container">
+              <img src="img/owner.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Owner</h5>
+                <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold">NOT FOR SALE</strong></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of single item -->
+      </div>
+      <!-- end of store items  -->
+    </div>
+  </section>
+  <!-- end of store section  -->
+  <!-- services  -->
+  <section id="services" class="services py-5">
+    <div class="container">
+      <div class="row">
+        <!-- single service  -->
+        <div class="col-md-4 text-center my-3">
+          <img src="img/skull2.png" alt="skull icon">
+          <h6 class="text-uppercase my-3 service-title">Skeletons</h6>
+          <p class="w-75 mx-auto text-left service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, sequi neque culpa accusamus totam doloremque perferendis ex architecto quas odit.</p>
+        </div>
+        <!-- end of single service -->
+        <!-- single service  -->
+        <div class="col-md-4 text-center my-3">
+          <img src="img/da-vinci.png" alt="skull icon">
+          <h6 class="text-uppercase my-3 service-title">Custom Work</h6>
+          <p class="w-75 mx-auto text-left service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, sequi neque culpa accusamus totam doloremque perferendis ex architecto quas odit.</p>
+        </div>
+        <!-- end of single service -->
+        <!-- single service  -->
+        <div class="col-md-4 text-center my-3">
+          <img src="img/globe.png" alt="skull icon">
+          <h6 class="text-uppercase my-3 service-title">Globes</h6>
+          <p class="w-75 mx-auto text-left service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, sequi neque culpa accusamus totam doloremque perferendis ex architecto quas odit.</p>
+        </div>
+        <!-- end of single service -->
+      </div>
+    </div>
+  </section>
+  <!-- end of services  -->
+  <!-- taxidermy  -->
+  <section id="taxidermy" class="taxidermy py-5">
+    <div class="container">
+      <!-- section title  -->
+      <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <h1 class="text-capitalize">Custom <strong class="banner-title">Taxidermy</strong></h1>
+        </div>
+      </div>
+      <!-- end section title  -->
+      <div class="row">
+        <!-- single taxidermy -->
+        <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
+          <h3 class="py-3">Small Project</h3>
+          <div class="text-muted">
+            <p class="my-3">small game project</p>
+            <p class="my-3">custom selection of animals</p>
+            <p class="my-3">custom decor</p>
+            <p class="my-3">custom design</p>
+            <button type="button" class="btn btn-white text-capitalize mb-3" style="background: black;">Order Now</button>
+            <p class="text-lowercase mb-4">Starting at $199</p>
+            <img src="img/mount2.png" class="img-fluid" alt="">
+          </div>
+        </div>
+        <!-- end of single taxidermy -->
+        <!-- single taxidermy -->
+        <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
+          <h3 class="py-3">Medium Project</h3>
+          <div class="text-muted">
+            <p class="my-3">medium game project</p>
+            <p class="my-3">custom selection of animals</p>
+            <p class="my-3">custom decor</p>
+            <p class="my-3">custom design</p>
+            <button type="button" class="btn btn-white text-capitalize mb-3" style="background: black;">Order Now</button>
+            <p class="text-lowercase mb-4">Starting at $199</p>
+            <img src="img/mount4.png" class="img-fluid" alt="">
+          </div>
+        </div>
+        <!-- end of single taxidermy -->
+        <!-- single taxidermy -->
+        <div class="col-11 mx-auto col-md-6 col-lg-4 my-4 text-capitalize text-center">
+          <h3 class="py-3">Large Project</h3>
+          <div class="text-muted">
+            <p class="my-3">large game project</p>
+            <p class="my-3">custom selection of animals</p>
+            <p class="my-3">custom decor</p>
+            <p class="my-3">custom design</p>
+            <button type="button" class="btn btn-white text-capitalize mb-3" style="background: black;">Order Now</button>
+            <p class="text-lowercase mb-4">Starting at $199</p>
+            <img src="img/mount3.png" class="img-fluid" alt="">
+          </div>
+        </div>
+        <!-- end of single taxidermy -->
+      </div>
+    </div>
+  </section>
+  <!-- end of taxidermy -->
+  <!-- footer -->
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 footer-title py-5">
+          <h1 class="text-capitalize text-center">
+            <strong class="banner-title">Amor Mortis Taxidermy</strong>
+          </h1>
+          <div class="footer-icons mt-3 d-flex justify-content-around flex-wrap">
+            <a href="#" class="footer-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="footer-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="footer-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="footer-icon">
+              <i class="fab fa-google-plus"></i>
+            </a>
+
+          </div>
+        </div>
+        <div class="col-md-6 footer-contact text-center text-capitalize p-5">
+          <h3 class="mb-5">Contact</h3>
+          <p class="d-flex flex-wrap">
+            <span class="mr-4 footer-icon">
+              <i class="fas fa-map"></i>
+            </span>
+            <span>
+              123 main St, San Diego, Ca, 92113
+            </span>
+          </p>
+          <p class="d-flex flex-wrap">
+            <span class="mr-4 footer-icon">
+              <i class="fas fa-phone"></i>
+            </span>
+            <span>
+              (123)456-7890
+            </span>
+          </p>
+          <p class="d-flex flex-wrap">
+            <span class="mr-4 footer-icon">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span>
+              email@gmail.com
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end of Footer  -->
+  <!-- jquery -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- bootstrap js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- script js -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
