@@ -1,4 +1,4 @@
 # AmorMortis
 taxidermy website, to sell goods and services
 
-https://xavixo.github.io/AmorMortis/
+https://xthemadgenius.github.io/AmorMortis/
